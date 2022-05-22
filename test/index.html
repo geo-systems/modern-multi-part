@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<script>var exports = {};</script>
+<script type="text/javascript" src="../dist/index.js" defer></script>
+
+
+
+<html>
+
+<body>
+    <input type="file" id="file-input" name="avatar">
+</body>
+
+<script type="text/javascript">
+    function onprogress(pe) {
+        const percent = Math.floor(pe.loaded / pe.total * 100);
+        console.log(`${percent} % finished`);
+    }
+    async function updateValue(e) {
+        const randomFile = new File(["foo"], "foo.txt", {
+            type: "text/plain",
+        });
+
+
+        const file = e.target.files[0]
+        const submissionPromise = ModernMultiPart.sendMultiPart('https://httpbin.org/post', { file }, { onprogress });
+
+
+        const r = await submissionPromise;
+        console.log(r)
+        debugger
+    }
+
+    const input = document.querySelector('input');
+    input.addEventListener('input', updateValue);
+</script>
+
+
+</html>
