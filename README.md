@@ -8,10 +8,10 @@ Simple and modern API for multipart requests from **the browser**. Monitor uploa
 - ✅ &nbsp;Cancel an ongoing request;
 - ✅ &nbsp;Monitor upoad progress;
 - ✅ &nbsp;Wraps [native browser API](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest);
-- ✅ &nbsp;Sandbox example with [React & react-dropzone](https://codesandbox.io/s/festive-lumiere-uys3jn?file=/src/App.tsx:99-112);
+- ✅ &nbsp;Sandbox example with [React & react-dropzone](https://codesandbox.io/s/festive-lumiere-uys3jn?file=/src/App.tsx);
 - ✅ &nbsp;Framework agnostic.
 
-Checkout the [CodeSandbox Demo](https://codesandbox.io/s/festive-lumiere-uys3jn?file=/src/App.tsx:99-112) (`React` & `react-dropzone`).
+Checkout the [CodeSandbox Demo](https://codesandbox.io/s/festive-lumiere-uys3jn?file=/src/App.tsx) (`React` & `react-dropzone`).
 
 ## Installation
 
