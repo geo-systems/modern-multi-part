@@ -1,15 +1,15 @@
 # Modern Multi Part
 
-Simple and modern API for multipart requests from <u>**the browser**</u>. Monitor upload progress and cancel on demand.
+Simple and modern API for multipart requests from **the browser**. Monitor upload progress and cancel on demand.
 
-- ✅  No dependencies;
-- ✅  100% TypeScript;
-- ✅  Returns a promise (`async`/`await` friendly);
-- ✅  Cancel in-progress requests;
-- ✅  Monitor upoad progress;
-- ✅  Wraps [native browser API](XMLHttpRequest);
-- ✅  Sandbox example with [React & react-dropzone](https://codesandbox.io/s/festive-lumiere-uys3jn?file=/src/App.tsx:99-112);
-- ✅  Framework agnostic.
+- ✅ No dependencies;
+- ✅ 100% TypeScript;
+- ✅ Returns a promise (`async`/`await` friendly);
+- ✅ Cancel an ongoing request;
+- ✅ Monitor upoad progress;
+- ✅ Wraps [native browser API](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest);
+- ✅ Sandbox example with [React & react-dropzone](https://codesandbox.io/s/festive-lumiere-uys3jn?file=/src/App.tsx:99-112);
+- ✅ Framework agnostic.
 
 Checkout the [CodeSandbox Demo](https://codesandbox.io/s/festive-lumiere-uys3jn?file=/src/App.tsx:99-112) (`React` & `react-dropzone`).
 
@@ -37,7 +37,7 @@ The library is packaged as a [UMD module](https://github.com/umdjs/umd). To buil
 npm run package
 ```
 
-## Code Example
+## Annotated Code Example
 
 ```typescript
 // If you're using npm:
@@ -45,7 +45,7 @@ import { sendMultiPart } from "modern-multi-part";
 // If you imported via script in HTML
 const sendMultiPart = ModernMultiPart.sendMultiPart;
 
-// Sample file - you would usually get that from an input field
+// Sample file - you would usually get that from a file input field
 const file = new File(["foo"], "foo.txt", { type: "text/plain" });
 
 // Returns a normal promise you can await.
@@ -83,13 +83,13 @@ The library introduces a single function `sendMultiPart` with the following para
 
 The supported options are:
 
-| Name            | Type                                                                                                                     | Default | Sample Value                                         |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------ | :-----: | :--------------------------------------------------- |
-| `headers`       | object / key value pairs                                                                                                 |  `{}`   | `{Authorization: "Bearer secret-token"}`             |
+| Name            | Type                                                                                                                     | Default | Sample Value                                       |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------ | :-----: | :------------------------------------------------- |
+| `headers`       | object / key value pairs                                                                                                 |  `{}`   | `{Authorization: "Bearer secret-token"}`           |
 | `onprogress`    | [ProgressEvent](https://developer.mozilla.org/en-US/docs/Web/API/ProgressEvent) handler                                  | `null`  | `(e) => console.log(100 * e.loaded / e.total, "%)` |
 | `username`      | string for [server auth](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/open)                           | `null`  |
 | `password`      | string for [server auth](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/open)                           | `null`  |
-| `timeoutMillis` | number for [connection timeout](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/timeout) in milliseconds | `null`  | 10000                                                |
+| `timeoutMillis` | number for [connection timeout](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/timeout) in milliseconds | `null`  | 10000                                              |
 
 Calling the function returns a `CancelablePromise`, which is a normal promise
 with an additional method `cancel`. Calling `cancel` will abort
