@@ -2,14 +2,14 @@
 
 Simple and modern API for multipart requests from **the browser**. Monitor upload progress and cancel on demand.
 
-- ✅ No dependencies;
-- ✅ 100% TypeScript;
-- ✅ Returns a promise (`async`/`await` friendly);
-- ✅ Cancel an ongoing request;
-- ✅ Monitor upoad progress;
-- ✅ Wraps [native browser API](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest);
-- ✅ Sandbox example with [React & react-dropzone](https://codesandbox.io/s/festive-lumiere-uys3jn?file=/src/App.tsx:99-112);
-- ✅ Framework agnostic.
+- ✅ &nbsp;No dependencies;
+- ✅ &nbsp;100% TypeScript;
+- ✅ &nbsp;Returns a promise (`async`/`await` friendly);
+- ✅ &nbsp;Cancel an ongoing request;
+- ✅ &nbsp;Monitor upoad progress;
+- ✅ &nbsp;Wraps [native browser API](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest);
+- ✅ &nbsp;Sandbox example with [React & react-dropzone](https://codesandbox.io/s/festive-lumiere-uys3jn?file=/src/App.tsx:99-112);
+- ✅ &nbsp;Framework agnostic.
 
 Checkout the [CodeSandbox Demo](https://codesandbox.io/s/festive-lumiere-uys3jn?file=/src/App.tsx:99-112) (`React` & `react-dropzone`).
 
