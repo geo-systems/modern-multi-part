@@ -1,6 +1,6 @@
 {
   "name": "modern-multi-part",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "description": "Easily POST multipart form data (e.g. files) from the browser",
   "main": "dist/index.js",
   "files": [

@@ -10,9 +10,9 @@ export interface IOptions {
 
 // Based on https://stackoverflow.com/questions/43159887/make-a-single-property-optional-in-typescript
 type PartialBy<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>;
-export type CancelablePromise<T> = Promise<T> & { cancel: () => any };
+type CancelablePromise<T> = Promise<T> & { cancel: () => any };
 
-export interface IMultiPartResponse {
+interface IMultiPartResponse {
   httpStatus: number;
   responseText: string;
   aborted: boolean;
